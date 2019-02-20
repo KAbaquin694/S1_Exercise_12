@@ -39,8 +39,8 @@ document.getElementById("calendar").innerHTML = createCalendar(thisDay);
 // Function to generate calendar table 
 function createCalendar(calDate) {
       var calendarHTML = "<table id='calendar_table'>";
-      calCalendarHMTL += calCaption(calDate);
-      calCalendarHTML += "</table>";
+      calendarHTML += calCaption(calDate);
+      calendarHTML += "</table>";
       return calendarHTML;
 }
 
