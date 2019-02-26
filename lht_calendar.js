@@ -31,7 +31,7 @@
 */
 
 // Set the dare displayed in the calendar
-var thisDay = new Date("August 24, 2018");
+var thisDay = new Date();
 
 // Write the calendar to the element with the id 'calendar'
 document.getElementById("calendar").innerHTML = createCalendar(thisDay);
@@ -110,9 +110,9 @@ function calDays(calDate) {
                   htmlCode += "<tr>";
             }
             if (i === highlightDay) {
-                  htmlCode += "<td class='calendar_dates' id='calendar_today'>" + i + "</td>";
+                  htmlCode += "<td class='calendar_dates' id='calendar_today'>" + i + dayEvent[i] + "</td>";
             } else {
-                  htmlCode += "<td class='calendar_dates'>" + i + "</td>"
+                  htmlCode += "<td class='calendar_dates'>" + i + dayEvent[i] + "</td>"
             }
             if (weekDay === 6) {
                   htmlCode += "</tr>";
